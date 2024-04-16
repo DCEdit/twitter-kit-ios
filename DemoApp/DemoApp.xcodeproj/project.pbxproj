@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		191FF0FFCC8156460546E43A /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E13E2EBAF8AC955FF850B86 /* Pods_DemoApp.framework */; };
-		2001BA381FA0EF0F0074EA67 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2001BA371FA0EF0F0074EA67 /* Config.xcconfig */; };
 		20ABD1D71F0188DD00DCA2E0 /* TweetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABD1D61F0188DC00DCA2E0 /* TweetCollectionViewController.swift */; };
 		2BB65BAD234654280090B40E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB65BA8234654280090B40E /* WebKit.framework */; };
 		377340651ECA3D080065FFE0 /* DeletedTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 377340641ECA3D080065FFE0 /* DeletedTweet.json */; };
@@ -167,10 +166,8 @@
 
 /* Begin PBXFileReference section */
 		0E13E2EBAF8AC955FF850B86 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2001BA371FA0EF0F0074EA67 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = "<group>"; };
 		20ABD1D61F0188DC00DCA2E0 /* TweetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCollectionViewController.swift; sourceTree = "<group>"; };
 		2BB65BA8234654280090B40E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		3733E29D1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		377340641ECA3D080065FFE0 /* DeletedTweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DeletedTweet.json; sourceTree = "<group>"; };
 		377783881E96AF1700BC4830 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = ../TwitterKit/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		3777838A1E96AFD500BC4830 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -312,8 +309,6 @@
 		379A6CAA1E95B47300625984 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2001BA371FA0EF0F0074EA67 /* Config.xcconfig */,
-				3733E29D1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle */,
 				3777838A1E96AFD500BC4830 /* Images.xcassets */,
 				379A6CBE1E95B47300625984 /* Info.plist */,
 				379A6CAB1E95B47300625984 /* main.m */,
@@ -485,8 +480,6 @@
 				379A6CA31E95B47300625984 /* Sources */,
 				379A6CA41E95B47300625984 /* Frameworks */,
 				379A6CA51E95B47300625984 /* Resources */,
-				5CC95A89CCCE654AA61DD03A /* [CP] Embed Pods Frameworks */,
-				DADBA983E9AF3AB8D69609B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -507,7 +500,6 @@
 				379A6CC11E95B47300625984 /* Resources */,
 				EE0BE018629DD8ED153A1F64 /* EarlGrey Copy Files */,
 				2ED58B3EEB5ADD287CE9AFAE /* [CP] Embed Pods Frameworks */,
-				552F865AFBDC07010AC075C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +524,7 @@
 				TargetAttributes = {
 					379A6CA61E95B47300625984 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8N89JV76A6;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -625,7 +618,6 @@
 			files = (
 				377783891E96AF1700BC4830 /* TwitterKitResources.bundle in Resources */,
 				379A6CBD1E95B47300625984 /* LaunchScreen.storyboard in Resources */,
-				2001BA381FA0EF0F0074EA67 /* Config.xcconfig in Resources */,
 				377340651ECA3D080065FFE0 /* DeletedTweet.json in Resources */,
 				3777838B1E96AFD500BC4830 /* Images.xcassets in Resources */,
 			);
@@ -647,13 +639,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2ED58B3EEB5ADD287CE9AFAE /* [CP] Embed Pods Frameworks */ = {
@@ -662,43 +657,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-frameworks.sh",
+				"${PODS_ROOT}/EarlGrey/EarlGrey/EarlGrey.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EarlGrey.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		552F865AFBDC07010AC075C4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CC95A89CCCE654AA61DD03A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F0835A6DCA75B971207E8EB /* [CP] Check Pods Manifest.lock */ = {
@@ -707,28 +675,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DADBA983E9AF3AB8D69609B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -820,7 +776,6 @@
 /* Begin XCBuildConfiguration section */
 		379A6CCA1E95B47300625984 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2001BA371FA0EF0F0074EA67 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -860,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -870,7 +825,6 @@
 		};
 		379A6CCB1E95B47300625984 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2001BA371FA0EF0F0074EA67 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -904,7 +858,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -920,13 +874,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8N89JV76A6;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor";
 				HEADER_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/Headers\"";
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.twitterkit.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modo.huazhiwuAbroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
@@ -942,13 +896,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8N89JV76A6;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor";
 				HEADER_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/Headers\"";
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.twitterkit.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modo.huazhiwuAbroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
@@ -963,7 +917,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = twitter.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -978,7 +931,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = twitter.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
