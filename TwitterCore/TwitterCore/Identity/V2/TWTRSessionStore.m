@@ -107,6 +107,7 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
     TWTRCheckArgumentWithCompletion2(session, completion);
 
     if (verifySession) {
+        NSLog(@"[%@] 返回结果开始验证 ------😊😊😊😊------",[self class]);
         [TWTRNetworkSessionProvider verifyUserSession:session withAuthConfig:self.authConfig APIServiceConfig:self.APIServiceConfig URLSession:self.URLSession completion:^(TWTRSession *userSession, NSError *error) {
             if (userSession) {
                 [self storeSession:userSession];

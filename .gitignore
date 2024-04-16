@@ -25,3 +25,13 @@ config.status
 Artifacts
 DemoApp/Config.xcconfig
 
+Pods/
+Podfile.lock
+
+TwitterCore/iphoneos
+TwitterCore/iphonesimulator
+
+TwitterKit/iphoneos
+TwitterKit/iphonesimulator
+
+

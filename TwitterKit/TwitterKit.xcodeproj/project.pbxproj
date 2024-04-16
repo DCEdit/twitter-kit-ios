@@ -398,10 +398,7 @@
 		A9A7FF0E18E4AAA8008334E6 /* TWTRTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A7FF0C18E4AAA8008334E6 /* TWTRTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9A7FF0F18E4AAA8008334E6 /* TWTRTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7FF0D18E4AAA8008334E6 /* TWTRTwitter.m */; };
 		A9A955B919903E5E0074867E /* TWTRTwitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A955B819903E5E0074867E /* TWTRTwitter_Private.h */; };
-		AA3E099220119CC000792255 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099120119CA500792255 /* MobileCoreServices.framework */; };
 		AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF0C9EE20119BB40057F438 /* CoreLocation.framework */; };
-		AA3E099A20125EBC00792255 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099120119CA500792255 /* MobileCoreServices.framework */; };
-		AA3E099C20125EC600792255 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099B20125EC600792255 /* MapKit.framework */; };
 		AAC420721F561C9F008189E1 /* TWTRVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4206F1F561C9F008189E1 /* TWTRVideoPlayerView.m */; };
 		AAC420791F561CB3008189E1 /* TWTRVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC4206E1F561C9F008189E1 /* TWTRVideoPlayerView.h */; };
 		AAC420931F5F59D8008189E1 /* TWTRTweetMediaView_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC4208D1F5F5984008189E1 /* TWTRTweetMediaView_Private.h */; };
@@ -498,7 +495,6 @@
 		AAF0C9ED2011998F0057F438 /* TwitterShareExtensionUI.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF0C9EC2011998F0057F438 /* TwitterShareExtensionUI.h */; };
 		AAF0C9F120119C0A0057F438 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF0C9EE20119BB40057F438 /* CoreLocation.framework */; };
 		AAF0C9F220119C2C0057F438 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF0C9F020119BED0057F438 /* MapKit.framework */; };
-		ACB17A0F2335DC330078FDF3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB17A0C2335DC320078FDF3 /* WebKit.framework */; };
 		BF318EB21ADF320A0082353A /* TWTRDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0AE5A71AC7359D00884B45 /* TWTRDateFormatter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF318F031AE03B400082353A /* TWTRComposer.h in Headers */ = {isa = PBXBuildFile; fileRef = F5154B8119D4E6130054DECF /* TWTRComposer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF318F041AE03B4E0082353A /* TWTRTweetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 376CFC20194A7F7F00E982FB /* TWTRTweetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -536,6 +532,9 @@
 		BFE839A91ADF28F80035CBA1 /* TWTRAPIConstantsStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D682B3318E25A1300145716 /* TWTRAPIConstantsStatus.h */; };
 		BFE839AA1ADF28FB0035CBA1 /* TWTRAPIConstantsTimelines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9B83221A8C1A25008F0B62 /* TWTRAPIConstantsTimelines.h */; };
 		BFE839AB1ADF28FD0035CBA1 /* TWTRTimelineCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDF60021A9518B400CDA855 /* TWTRTimelineCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6CDC9842BCD13A600312813 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CDC9832BCD13A600312813 /* WebKit.framework */; };
+		C6CDC9862BCD13B000312813 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CDC9852BCD13B000312813 /* MobileCoreServices.framework */; };
+		C6CDC9882BCD13B900312813 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CDC9872BCD13B900312813 /* UIKit.framework */; };
 		DB01619A1C87931500B329AD /* TWTRTweetDelegationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0161981C87931500B329AD /* TWTRTweetDelegationHelper.h */; };
 		DB01619B1C87931500B329AD /* TWTRTweetDelegationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0161981C87931500B329AD /* TWTRTweetDelegationHelper.h */; };
 		DB01619C1C87931500B329AD /* TWTRTweetDelegationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0161991C87931500B329AD /* TWTRTweetDelegationHelper.m */; };
@@ -548,7 +547,6 @@
 		DB1BC4E81D70AC10006D6D72 /* TWTRMediaContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1BC4E61D70AC10006D6D72 /* TWTRMediaContainerViewController.m */; };
 		DB2242611C3F2181008A6DC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236048619F18F5F00532281 /* CoreData.framework */; };
 		DB2242661C3F2188008A6DC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9489E161930B92F00E5C4F7 /* CoreGraphics.framework */; };
-		DB2242671C3F218F008A6DC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FE0753191AAC3500485617 /* UIKit.framework */; };
 		DB2242681C3F2194008A6DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97654E818E0B29B00E25169 /* Foundation.framework */; };
 		DB2242691C3F228B008A6DC7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6DF0881C1FD0A60025D42C /* CoreMedia.framework */; };
 		DB22426A1C3F2292008A6DC7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37962C151BF1702000FA432A /* AVFoundation.framework */; };
@@ -1123,8 +1121,6 @@
 		A9FB560D18FDC99B001A4137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9FB561E18FDC99B001A4137 /* TwitterSocial Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitterSocial Tests-Info.plist"; sourceTree = "<group>"; };
 		A9FB561F18FDC99B001A4137 /* TwitterKit Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwitterKit Tests-Prefix.pch"; sourceTree = "<group>"; };
-		AA3E099120119CA500792255 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		AA3E099B20125EC600792255 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		AAAE73C21FB380D7005BEEAD /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		AAAE73C31FB380D7005BEEAD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		AAAE73C41FB380D7005BEEAD /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
@@ -1224,7 +1220,6 @@
 		AAF0C9EC2011998F0057F438 /* TwitterShareExtensionUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterShareExtensionUI.h; sourceTree = "<group>"; };
 		AAF0C9EE20119BB40057F438 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AAF0C9F020119BED0057F438 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		ACB17A0C2335DC320078FDF3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF45C7DC1A1AAE24009C58BE /* TWTRAutoLayoutDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAutoLayoutDebugging.h; sourceTree = "<group>"; };
 		BF45C7DD1A1AAE24009C58BE /* TWTRAutoLayoutDebugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRAutoLayoutDebugging.m; sourceTree = "<group>"; };
 		BF8EF2DE1AFD4F65008B4829 /* TWTRSessionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSessionTests.m; sourceTree = "<group>"; };
@@ -1232,6 +1227,9 @@
 		BFE839401ADF16C70035CBA1 /* TWTRConstants_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRConstants_Private.h; path = "../../../Supporting Files/TWTRConstants_Private.h"; sourceTree = "<group>"; };
 		BFE839411ADF16C70035CBA1 /* TWTRConstants_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRConstants_Private.m; path = "../../../Supporting Files/TWTRConstants_Private.m"; sourceTree = "<group>"; };
 		BFE839601ADF23590035CBA1 /* TwitterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CDC9832BCD13A600312813 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C6CDC9852BCD13B000312813 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C6CDC9872BCD13B900312813 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB0161981C87931500B329AD /* TWTRTweetDelegationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTweetDelegationHelper.h; sourceTree = "<group>"; };
 		DB0161991C87931500B329AD /* TWTRTweetDelegationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTweetDelegationHelper.m; sourceTree = "<group>"; };
 		DB01A07C1C612E580016DFE1 /* ManyEntitiesTweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ManyEntitiesTweet.json; sourceTree = "<group>"; };
@@ -1345,8 +1343,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3E099C20125EC600792255 /* MapKit.framework in Frameworks */,
-				AA3E099A20125EBC00792255 /* MobileCoreServices.framework in Frameworks */,
 				AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */,
 				377941501E96DB610049A022 /* OCMock.framework in Frameworks */,
 				3754A64F1CCACCC10044E159 /* SafariServices.framework in Frameworks */,
@@ -1384,8 +1380,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB17A0F2335DC330078FDF3 /* WebKit.framework in Frameworks */,
-				AA3E099220119CC000792255 /* MobileCoreServices.framework in Frameworks */,
+				C6CDC9882BCD13B900312813 /* UIKit.framework in Frameworks */,
+				C6CDC9862BCD13B000312813 /* MobileCoreServices.framework in Frameworks */,
+				C6CDC9842BCD13A600312813 /* WebKit.framework in Frameworks */,
 				AAF0C9F220119C2C0057F438 /* MapKit.framework in Frameworks */,
 				AAF0C9F120119C0A0057F438 /* CoreLocation.framework in Frameworks */,
 				37ED04661CE3E81C003DC129 /* SafariServices.framework in Frameworks */,
@@ -1397,7 +1394,6 @@
 				DB22426A1C3F2292008A6DC7 /* AVFoundation.framework in Frameworks */,
 				DB2242691C3F228B008A6DC7 /* CoreMedia.framework in Frameworks */,
 				DB2242681C3F2194008A6DC7 /* Foundation.framework in Frameworks */,
-				DB2242671C3F218F008A6DC7 /* UIKit.framework in Frameworks */,
 				DB2242661C3F2188008A6DC7 /* CoreGraphics.framework in Frameworks */,
 				DB2242611C3F2181008A6DC7 /* CoreData.framework in Frameworks */,
 				DB22427F1C3F24A2008A6DC7 /* libTwitterCore.a in Frameworks */,
@@ -1411,9 +1407,9 @@
 		208ACAB41FB2800900008F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACB17A0C2335DC320078FDF3 /* WebKit.framework */,
-				AA3E099B20125EC600792255 /* MapKit.framework */,
-				AA3E099120119CA500792255 /* MobileCoreServices.framework */,
+				C6CDC9872BCD13B900312813 /* UIKit.framework */,
+				C6CDC9852BCD13B000312813 /* MobileCoreServices.framework */,
+				C6CDC9832BCD13A600312813 /* WebKit.framework */,
 				AAF0C9F020119BED0057F438 /* MapKit.framework */,
 				AAF0C9EE20119BB40057F438 /* CoreLocation.framework */,
 			);
@@ -2246,31 +2242,31 @@
 		AAF0C9322011991B0057F438 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				AAF0C9332011991B0057F438 /* TWTRSETweetShareViewControllerDelegate.h */,
-				AAF0C9352011991B0057F438 /* TWTRSEImageProvider.h */,
-				AAF0C9362011991B0057F438 /* TWTRSETweetShareViewController.m */,
-				AAF0C9372011991B0057F438 /* TWTRSETweet.h */,
-				AAF0C9382011991B0057F438 /* TWTRSEFonts.m */,
-				AAF0C9392011991B0057F438 /* TWTRSETweetURLAttachmentMetadata.m */,
-				AAF0C93A2011991B0057F438 /* TWTRSETweetShareConfiguration.h */,
-				AAF0C93B2011991B0057F438 /* TWTRSEGeoTagging.h */,
-				AAF0C93C2011991B0057F438 /* TWTRSELocalizedResources.h */,
-				AAF0C93D2011991B0057F438 /* TWTRSECardPreviewProvider.h */,
-				AAF0C93E2011991B0057F438 /* TWTRSETweetAttachment.h */,
-				AAF0C9402011991B0057F438 /* TWTRSEAutoCompletion.h */,
-				AAF0C9412011991B0057F438 /* TWTRSEImageDownloader.h */,
-				AAF0C9422011991B0057F438 /* TWTRSEGeoPlace.h */,
 				AAF0C9432011991B0057F438 /* TWTRSEAccount.h */,
-				AAF0C9442011991B0057F438 /* TWTRSEImageProvider.m */,
-				AAF0C9452011991B0057F438 /* TWTRSETweetShareConfiguration.m */,
-				AAF0C9462011991B0057F438 /* TWTRSETweetURLAttachmentMetadata.h */,
-				AAF0C9472011991B0057F438 /* TWTRSEWordRangeCalculator.h */,
+				AAF0C9402011991B0057F438 /* TWTRSEAutoCompletion.h */,
+				AAF0C93D2011991B0057F438 /* TWTRSECardPreviewProvider.h */,
 				AAF0C9482011991B0057F438 /* TWTRSEFonts.h */,
-				AAF0C9492011991B0057F438 /* TWTRSETweet.m */,
-				AAF0C94A2011991B0057F438 /* TWTRSETweetShareViewController.h */,
-				AAF0C94B2011991B0057F438 /* TWTRSETwitterUser.h */,
-				AAF0C94C2011991B0057F438 /* TWTRSETweetAttachment.m */,
+				AAF0C9382011991B0057F438 /* TWTRSEFonts.m */,
+				AAF0C9422011991B0057F438 /* TWTRSEGeoPlace.h */,
+				AAF0C93B2011991B0057F438 /* TWTRSEGeoTagging.h */,
+				AAF0C9412011991B0057F438 /* TWTRSEImageDownloader.h */,
+				AAF0C9352011991B0057F438 /* TWTRSEImageProvider.h */,
+				AAF0C9442011991B0057F438 /* TWTRSEImageProvider.m */,
+				AAF0C93C2011991B0057F438 /* TWTRSELocalizedResources.h */,
 				AAF0C94D2011991B0057F438 /* TWTRSENetworking.h */,
+				AAF0C9372011991B0057F438 /* TWTRSETweet.h */,
+				AAF0C9492011991B0057F438 /* TWTRSETweet.m */,
+				AAF0C93E2011991B0057F438 /* TWTRSETweetAttachment.h */,
+				AAF0C94C2011991B0057F438 /* TWTRSETweetAttachment.m */,
+				AAF0C93A2011991B0057F438 /* TWTRSETweetShareConfiguration.h */,
+				AAF0C9452011991B0057F438 /* TWTRSETweetShareConfiguration.m */,
+				AAF0C94A2011991B0057F438 /* TWTRSETweetShareViewController.h */,
+				AAF0C9362011991B0057F438 /* TWTRSETweetShareViewController.m */,
+				AAF0C9332011991B0057F438 /* TWTRSETweetShareViewControllerDelegate.h */,
+				AAF0C9462011991B0057F438 /* TWTRSETweetURLAttachmentMetadata.h */,
+				AAF0C9392011991B0057F438 /* TWTRSETweetURLAttachmentMetadata.m */,
+				AAF0C94B2011991B0057F438 /* TWTRSETwitterUser.h */,
+				AAF0C9472011991B0057F438 /* TWTRSEWordRangeCalculator.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -3546,12 +3542,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB2241761C3DA603008A6DC7 /* libTwitterKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				BITCODE_GENERATION_MODE = bitcode;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
 				);
 				SDKROOT = iphoneos;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=watchsimulator*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -3559,12 +3558,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB2241761C3DA603008A6DC7 /* libTwitterKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				BITCODE_GENERATION_MODE = bitcode;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
 				);
 				SDKROOT = iphoneos;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=watchsimulator*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -3572,10 +3574,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37510DA81D3EC1080048227C /* TwitterKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = YES;
-				MARKETING_VERSION = 5.1.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/PrivateFrameworks",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -3583,6 +3592,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
 				SDKROOT = iphoneos;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=watchsimulator*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -3590,10 +3601,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37510DA81D3EC1080048227C /* TwitterKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = YES;
-				MARKETING_VERSION = 5.1.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/PrivateFrameworks",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -3601,6 +3619,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
 				SDKROOT = iphoneos;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=watchsimulator*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};

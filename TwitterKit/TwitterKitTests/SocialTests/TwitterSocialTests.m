@@ -133,6 +133,7 @@
     OCMStub([mockLoginParser alloc]).andReturn(mockLoginParserInstance);
 
     XCTAssertThrows([self.twitterKit logInWithCompletion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
+        
     }]);
 }
 
@@ -143,6 +144,7 @@
     OCMStub([mockMobileSSO alloc]).andReturn(stubMobileSSO);
 
     [self.twitterKit logInWithCompletion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
+        
     }];
     XCTAssert(stubMobileSSO.didAttemptAppLogin == YES);
 }
@@ -152,6 +154,7 @@
     id mockTwitterKit = OCMPartialMock(self.twitterKit);
     OCMExpect([mockTwitterKit performWebBasedLogin:OCMOCK_ANY completion:OCMOCK_ANY]);
     [self.twitterKit logInWithCompletion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
+        
     }];
     OCMVerifyAll(mockTwitterKit);
 }
@@ -162,6 +165,7 @@
     __weak typeof(viewController) weakViewController = viewController;
     [self.twitterKit logInWithViewController:viewController
                                   completion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
+        
                                   }];
     viewController = nil;
     XCTAssertNil(weakViewController);
